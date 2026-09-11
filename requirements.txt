@@ -1,0 +1,6 @@
+streamlit
+fastembed
+chromadb
+pypdf
+groq
+python-dotenv
