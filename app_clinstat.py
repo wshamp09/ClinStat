@@ -2,7 +2,7 @@ import os
 import streamlit as st
 from dotenv import load_dotenv
 from fastembed import TextEmbedding
-from rag_pipe import load_vector_store, run_agent, expand_with_example, retrieve_context, ask_groq, EMBED_MODEL
+from rag_pipe import load_vector_store, run_agent, EMBED_MODEL
 
 load_dotenv()
 
@@ -25,17 +25,10 @@ st.caption(f"{collection.count()} chunks indexed. Agent decides when to search y
 query = st.text_area(
     "Your question",
     height=100,
-    placeholder="e.g. Briefly describe adaptive approaches, then show me R code for a simple adaptive design simulation",
+    placeholder="e.g. Briefly describe adaptive approaches",
 )
 
-col1, col2 = st.columns([2, 1])
-with col1:
-    ask_clicked = st.button("Ask")
-with col2:
-    want_example = st.checkbox("Also generate code example", value=False)
-    language = st.selectbox("Language", ["R", "Python", "SAS"], disabled=not want_example)
-
-if ask_clicked and query:
+if st.button("Ask") and query:
     with st.spinner("Thinking..."):
         answer, sources, used_search = run_agent(query, collection, embedder)
 
@@ -48,11 +41,3 @@ if ask_clicked and query:
                 st.write(f"- {src}")
     else:
         st.caption("_Answered from general knowledge — no document search was needed._")
-
-    if want_example:
-        with st.spinner(f"Generating {language} example..."):
-            docs, doc_sources = retrieve_context(collection, embedder, query)
-            example = expand_with_example(query, answer, docs, doc_sources, language=language)
-
-        st.markdown(f"### {language} example (generated — not sourced from documents)")
-        st.code(example, language=language.lower())
