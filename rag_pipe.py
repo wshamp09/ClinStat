@@ -66,6 +66,10 @@ def build_vector_store():
         for path in pdf_files:
             print(f"Processing [{category}] {os.path.basename(path)}...")
             text = extract_text_from_pdf(path)
+
+            if len(text.strip()) < 100:
+                print(f"⚠️  Warning: {os.path.basename(path)} extracted almost no text — may be scanned/image-based.")
+
             chunks = chunk_text(text)
             if not chunks:
                 continue
@@ -105,67 +109,6 @@ def retrieve_context(collection, embedder, query, top_k=4, category=None):
     return docs, sources
 
 # ---------------------------------------------------------------
-# Direct Groq call
-# ---------------------------------------------------------------
-def ask_groq(query, context_chunks, sources):
-    client = Groq(api_key=get_groq_api_key())
-
-    context_block = "\n\n---\n\n".join(
-        f"[Source: {src}]\n{chunk}" for chunk, src in zip(context_chunks, sources)
-    )
-
-    prompt = f"""Answer the question using only the context below. If the context doesn't contain the answer, say so.
-
-Context:
-{context_block}
-
-Question: {query}
-"""
-
-    response = client.chat.completions.create(
-        model=GROQ_MODEL,
-        messages=[
-            {"role": "system", "content": "You are a helpful assistant that answers questions based on provided document context."},
-            {"role": "user", "content": prompt},
-        ],
-        temperature=0.3,
-    )
-    return response.choices[0].message.content
-
-def expand_with_example(query, answer, context_chunks, sources, language="R"):
-    client = Groq(api_key=get_groq_api_key())
-
-    context_block = "\n\n---\n\n".join(
-        f"[Source: {src}]\n{chunk}" for chunk, src in zip(context_chunks, sources)
-    )
-
-    prompt = f"""You previously answered a question using document context. Now write a
-{language} code example that illustrates the concept in a practical way.
-
-Original question: {query}
-
-Grounded answer (from documents):
-{answer}
-
-Supporting document context:
-{context_block}
-
-Write a self-contained, runnable {language} example with brief comments explaining each step.
-If the documents don't contain enough detail to make the example specific, use reasonable
-general knowledge of the method, but stay consistent with what the documents describe.
-"""
-
-    response = client.chat.completions.create(
-        model=GROQ_MODEL,
-        messages=[
-            {"role": "system", "content": f"You are an expert statistical programmer who writes clear, well-commented {language} code."},
-            {"role": "user", "content": prompt},
-        ],
-        temperature=0.4,
-    )
-    return response.choices[0].message.content
-
-# ---------------------------------------------------------------
 # Agent
 # ---------------------------------------------------------------
 SEARCH_TOOL = {
@@ -203,9 +146,12 @@ def run_agent(user_query, collection, embedder, max_tool_rounds=3):
                 "containing three categories: RegulatoryDocs, StatBooks, and StatPapers. "
                 "You have a search_documents tool to search this knowledge bank, optionally filtered by category. "
                 "Use it when the question relates to specifics that might be in those documents. "
-                "If the question is general knowledge, you may answer directly, or search first to ground "
-                "your answer, then supplement with general knowledge. Clearly separate: (1) what comes from "
-                "retrieved documents (cite source filename and category), and (2) general knowledge/synthesis."
+                "Write one cohesive, natural answer that blends retrieved document content with your own "
+                "expertise — do not split your response into separate 'from documents' and 'general knowledge' "
+                "sections. Instead, cite sources inline as you use them, e.g. 'per the FDA adaptive design "
+                "guidance (RegulatoryDocs/filename.pdf), ...' or '(StatBooks/filename.pdf)'. If a claim doesn't "
+                "come from a specific retrieved passage, just state it plainly without a citation. The result "
+                "should read as one unified, well-cited explanation, not two disconnected halves."
             )
         },
         {"role": "user", "content": user_query}
@@ -249,13 +195,16 @@ def run_agent(user_query, collection, embedder, max_tool_rounds=3):
                 "content": tool_result or "No relevant documents found."
             })
 
-    # Hit max rounds — sidestep tool-choice conflicts entirely by starting a
-    # fresh, plain (non-tool) completion using everything gathered so far.
+    # Hit max rounds — sidestep tool-choice conflicts by starting a fresh,
+    # plain (non-tool) completion using everything gathered so far.
     context_block = "\n\n---\n\n".join(
         f"[Source: {src}]\n{chunk}" for chunk, src in zip(all_docs, all_sources)
     )
-    fallback_prompt = f"""Based on the following retrieved document context, answer the original question.
-Clearly separate what comes from the documents (cite source) from general knowledge.
+    fallback_prompt = f"""Based on the following retrieved document context, write one cohesive answer to
+the original question. Blend the document content naturally into your explanation, citing sources inline
+(e.g. "(RegulatoryDocs/filename.pdf)") only where a specific claim comes from that source. Do not separate
+the answer into distinct 'document' and 'general knowledge' sections — write it as a single, well-integrated
+explanation.
 
 Retrieved context:
 {context_block}
@@ -273,17 +222,7 @@ Original question: {user_query}
     return final.choices[0].message.content, all_sources, used_search
 
 # ---------------------------------------------------------------
-# CLI entry point
+# CLI entry point (ingestion)
 # ---------------------------------------------------------------
 if __name__ == "__main__":
     collection = build_vector_store()
-    embedder = TextEmbedding(model_name=EMBED_MODEL)
-
-    query = input("\nAsk a question: ")
-    answer, sources, used_search = run_agent(query, collection, embedder)
-
-    print("\n--- Answer ---")
-    print(answer)
-    if used_search:
-        print("\n--- Sources used ---")
-        print(set(sources))
