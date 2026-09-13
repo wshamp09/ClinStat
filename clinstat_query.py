@@ -11,12 +11,14 @@ def main():
     collection = load_vector_store()
     print(f"Ready. {collection.count()} chunks indexed.\n")
 
+    history = []
+
     while True:
         query = input("Ask a question (or 'quit'): ").strip()
         if query.lower() in ("quit", "exit", ""):
             break
 
-        answer, sources, used_search = run_agent(query, collection, embedder)
+        answer, sources, used_search = run_agent(query, collection, embedder, history=history)
 
         print("\n--- Answer ---")
         print(answer)
@@ -24,6 +26,12 @@ def main():
             print("\n--- Sources ---")
             print(set(sources))
         print()
+
+        history.append({"role": "user", "content": query})
+        history.append({"role": "assistant", "content": answer})
+
+
+history = history[-4:]
 
 if __name__ == "__main__":
     main()

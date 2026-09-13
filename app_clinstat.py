@@ -20,24 +20,40 @@ def get_collection():
 embedder = get_embedder()
 collection = get_collection()
 
-st.caption(f"{collection.count()} chunks indexed. Agent decides when to search your documents vs. answer from general knowledge.")
+st.caption(f"{collection.count()} chunks indexed.")
 
-query = st.text_area(
-    "Your question",
-    height=100,
-    placeholder="e.g. Briefly describe adaptive approaches",
-)
+if "chat_history" not in st.session_state:
+    st.session_state.chat_history = []  # list of {"role": "user"/"assistant", "content": ...}
 
-if st.button("Ask") and query:
-    with st.spinner("Thinking..."):
-        answer, sources, used_search = run_agent(query, collection, embedder)
+# Render prior turns
+for turn in st.session_state.chat_history:
+    with st.chat_message(turn["role"]):
+        st.write(turn["content"])
 
-    st.markdown("### Answer")
-    st.write(answer)
+query = st.chat_input("Ask a question about your documents...")
 
-    if used_search:
-        with st.expander("Documents searched"):
-            for src in set(sources):
-                st.write(f"- {src}")
-    else:
-        st.caption("_Answered from general knowledge — no document search was needed._")
+if st.button("Clear conversation"):
+    st.session_state.chat_history = []
+    st.rerun()
+
+if query:
+    with st.chat_message("user"):
+        st.write(query)
+
+    with st.chat_message("assistant"):
+        with st.spinner("Thinking..."):
+            answer, sources, used_search = run_agent(
+                query, collection, embedder, history=st.session_state.chat_history
+            )
+        st.write(answer)
+        if used_search:
+            with st.expander("Sources referenced"):
+                for src in set(sources):
+                    st.write(f"- {src}")
+
+    st.session_state.chat_history.append({"role": "user", "content": query})
+    st.session_state.chat_history.append({"role": "assistant", "content": answer})
+
+    # Keep only the last 4 messages (2 user/assistant pairs) — retrieved context
+# already adds significant tokens per turn, so history needs to stay lean
+st.session_state.chat_history = st.session_state.chat_history[-4:]
