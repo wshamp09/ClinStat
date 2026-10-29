@@ -1,0 +1,88 @@
+{
+  "id": "master_protocol",
+  "title": "Master / platform protocols",
+  "doc_type": "master protocol/SAP",
+  "source_note": "FDA Master Protocols guidance (final, 2022, oncology focus) and platform trial literature",
+  "items": [
+    {
+      "id": "MP1",
+      "title": "Structure and governance",
+      "requirement": "Master protocol structure (umbrella / basket / platform), sub-studies and governance are described.",
+      "query": "master protocol umbrella basket platform structure",
+      "documents": [
+        "FDA_masterprotocols",
+        "PlatformTrialDesigns"
+      ]
+    },
+    {
+      "id": "MP2",
+      "title": "Adding and dropping arms",
+      "requirement": "Rules and procedures for adding new arms and dropping arms (futility/efficacy) are pre-specified.",
+      "query": "adding new arms dropping arms futility platform",
+      "documents": [
+        "FDA_masterprotocols",
+        "PlatformTrialDesigns"
+      ]
+    },
+    {
+      "id": "MP3",
+      "title": "Shared and non-concurrent controls",
+      "requirement": "Use of a shared control arm is described; any use of non-concurrent controls is justified with bias safeguards.",
+      "query": "common control arm non-concurrent controls",
+      "documents": [
+        "FDA_masterprotocols",
+        "PlatformTrialDesigns"
+      ]
+    },
+    {
+      "id": "MP4",
+      "title": "Randomisation and allocation",
+      "requirement": "Randomisation and any allocation-ratio changes as arms enter or leave are specified.",
+      "query": "randomization allocation ratio arms added",
+      "documents": [
+        "FDA_masterprotocols",
+        "PlatformTrialDesigns"
+      ]
+    },
+    {
+      "id": "MP5",
+      "title": "Error control per comparison",
+      "requirement": "Type I error control for each sub-study/comparison (and any multiplicity across arms) is stated.",
+      "query": "type I error control each substudy multiplicity arms",
+      "documents": [
+        "FDA_masterprotocols",
+        "PlatformTrialDesigns"
+      ]
+    },
+    {
+      "id": "MP6",
+      "title": "Statistical analysis plan per sub-study",
+      "requirement": "Each sub-study has its own SAP or SAP section, including sample size.",
+      "query": "statistical analysis plan each substudy sample size",
+      "documents": [
+        "FDA_masterprotocols",
+        "PlatformTrialDesigns"
+      ]
+    },
+    {
+      "id": "MP7",
+      "title": "Independent monitoring",
+      "requirement": "An independent DMC and interim analysis plans cover all sub-studies.",
+      "query": "independent data monitoring committee interim analyses master protocol",
+      "documents": [
+        "FDA_masterprotocols",
+        "PlatformTrialDesigns"
+      ]
+    },
+    {
+      "id": "MP8",
+      "title": "Simulation of operating characteristics",
+      "requirement": "Operating characteristics of the platform design are evaluated by simulation.",
+      "query": "simulation operating characteristics platform design",
+      "documents": [
+        "FDA_masterprotocols",
+        "PlatformTrialDesigns"
+      ]
+    }
+  ]
+}

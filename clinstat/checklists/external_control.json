@@ -1,0 +1,98 @@
+{
+  "id": "external_control",
+  "title": "Externally controlled trials (FDA 2023 draft)",
+  "doc_type": "protocol/SAP",
+  "source_note": "FDA Considerations for the Design and Conduct of Externally Controlled Trials (draft, Feb 2023)",
+  "items": [
+    {
+      "id": "X1",
+      "title": "Design justification",
+      "requirement": "Why an external control is appropriate instead of (or in addition to) concurrent randomisation is justified.",
+      "query": "appropriateness of externally controlled trial design",
+      "documents": [
+        "FDA_ExternalControl"
+      ]
+    },
+    {
+      "id": "X2",
+      "title": "Pre-specification",
+      "requirement": "Protocol and SAP, including external data selection and analyses, are finalised before outcome data are analysed.",
+      "query": "pre-specify protocol statistical analysis plan before external data",
+      "documents": [
+        "FDA_ExternalControl"
+      ]
+    },
+    {
+      "id": "X3",
+      "title": "Data source fitness",
+      "requirement": "Relevance and reliability of the external data source are assessed (data quality, completeness, provenance).",
+      "query": "external data source relevance reliability quality",
+      "documents": [
+        "FDA_ExternalControl"
+      ]
+    },
+    {
+      "id": "X4",
+      "title": "Comparability of populations",
+      "requirement": "Eligibility criteria are applied equivalently and index date / time zero is aligned.",
+      "query": "comparability eligibility criteria index date time zero",
+      "documents": [
+        "FDA_ExternalControl"
+      ]
+    },
+    {
+      "id": "X5",
+      "title": "Treatment attributes",
+      "requirement": "Treatment and concomitant-care differences between arms are described.",
+      "query": "treatment attributes concomitant therapy comparability",
+      "documents": [
+        "FDA_ExternalControl"
+      ]
+    },
+    {
+      "id": "X6",
+      "title": "Outcome comparability",
+      "requirement": "Outcome definitions, assessment timing and ascertainment are comparable between arms.",
+      "query": "outcome assessment ascertainment comparability timing",
+      "documents": [
+        "FDA_ExternalControl"
+      ]
+    },
+    {
+      "id": "X7",
+      "title": "Confounding control",
+      "requirement": "Important confounders are identified and the adjustment method (e.g. propensity scores) with balance diagnostics is specified.",
+      "query": "confounding baseline covariates propensity score balance",
+      "documents": [
+        "FDA_ExternalControl"
+      ]
+    },
+    {
+      "id": "X8",
+      "title": "Missing data",
+      "requirement": "Missing data in the external source and their handling are addressed.",
+      "query": "missing data external control",
+      "documents": [
+        "FDA_ExternalControl"
+      ]
+    },
+    {
+      "id": "X9",
+      "title": "Sensitivity / bias analysis",
+      "requirement": "Sensitivity and quantitative bias analyses for unmeasured confounding are planned.",
+      "query": "sensitivity analyses quantitative bias unmeasured confounding",
+      "documents": [
+        "FDA_ExternalControl"
+      ]
+    },
+    {
+      "id": "X10",
+      "title": "Regulatory interaction and data access",
+      "requirement": "Early FDA interaction is planned and patient-level external data can be provided.",
+      "query": "patient-level data submission FDA early discussion",
+      "documents": [
+        "FDA_ExternalControl"
+      ]
+    }
+  ]
+}

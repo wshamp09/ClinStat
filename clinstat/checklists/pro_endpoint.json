@@ -1,0 +1,80 @@
+{
+  "id": "pro_endpoint",
+  "title": "PRO endpoints (FDA PRO guidance 2009)",
+  "doc_type": "protocol/SAP",
+  "source_note": "FDA Patient-Reported Outcome Measures guidance (final, Dec 2009); see also the PFDD guidance series",
+  "items": [
+    {
+      "id": "P1",
+      "title": "Concept of interest",
+      "requirement": "The concept measured and its link to the intended claim are stated.",
+      "query": "concept of interest claim conceptual framework",
+      "documents": [
+        "FDA_PROclaims"
+      ]
+    },
+    {
+      "id": "P2",
+      "title": "Content validity",
+      "requirement": "Evidence that the instrument captures what matters to patients (qualitative input) is cited.",
+      "query": "content validity patient input qualitative",
+      "documents": [
+        "FDA_PROclaims"
+      ]
+    },
+    {
+      "id": "P3",
+      "title": "Recall period",
+      "requirement": "The recall period is specified and appropriate to the concept.",
+      "query": "recall period",
+      "documents": [
+        "FDA_PROclaims"
+      ]
+    },
+    {
+      "id": "P4",
+      "title": "Measurement properties",
+      "requirement": "Reliability, construct validity and ability to detect change are documented.",
+      "query": "reliability construct validity ability to detect change",
+      "documents": [
+        "FDA_PROclaims"
+      ]
+    },
+    {
+      "id": "P5",
+      "title": "Administration",
+      "requirement": "Mode, timing and order of administration and any translations / cultural adaptation are described.",
+      "query": "mode of administration translation cultural adaptation",
+      "documents": [
+        "FDA_PROclaims"
+      ]
+    },
+    {
+      "id": "P6",
+      "title": "Scoring and missing items",
+      "requirement": "The scoring algorithm and handling of missing items/domains are specified.",
+      "query": "scoring algorithm missing items",
+      "documents": [
+        "FDA_PROclaims"
+      ]
+    },
+    {
+      "id": "P7",
+      "title": "Interpretation",
+      "requirement": "A responder definition or meaningful within-patient change threshold is pre-specified and justified (e.g. anchor-based).",
+      "query": "responder definition clinically meaningful change interpretation anchor",
+      "documents": [
+        "FDA_PROclaims"
+      ]
+    },
+    {
+      "id": "P8",
+      "title": "Multiplicity across domains",
+      "requirement": "Multiplicity across PRO domains/items is addressed.",
+      "query": "multiple domains multiplicity PRO endpoints",
+      "documents": [
+        "FDA_PROclaims"
+      ]
+    }
+  ]
+}

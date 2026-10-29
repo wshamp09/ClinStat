@@ -1,0 +1,80 @@
+{
+  "id": "multiple_endpoints",
+  "title": "Multiple endpoints & multiplicity (FDA 2022)",
+  "doc_type": "protocol/SAP",
+  "source_note": "FDA Multiple Endpoints in Clinical Trials (final guidance, Oct 2022)",
+  "items": [
+    {
+      "id": "M1",
+      "title": "Endpoint hierarchy",
+      "requirement": "Primary, secondary and exploratory endpoint families are clearly designated.",
+      "query": "hierarchy of families of endpoints primary secondary exploratory",
+      "documents": [
+        "FDA_MultipleEndpoints"
+      ]
+    },
+    {
+      "id": "M2",
+      "title": "FWER control for claims",
+      "requirement": "Type I error is controlled across all endpoints intended to support efficacy claims.",
+      "query": "control of type I error rate familywise multiple endpoints",
+      "documents": [
+        "FDA_MultipleEndpoints"
+      ]
+    },
+    {
+      "id": "M3",
+      "title": "Multiplicity method described",
+      "requirement": "The multiplicity procedure (e.g. fixed sequence, fallback, Holm, Hochberg, gatekeeping, graphical) is specified, including any assumptions it relies on.",
+      "query": "multiplicity procedures Bonferroni Holm Hochberg fixed sequence fallback gatekeeping graphical",
+      "documents": [
+        "FDA_MultipleEndpoints"
+      ]
+    },
+    {
+      "id": "M4",
+      "title": "Secondary endpoints gated",
+      "requirement": "Secondary endpoints are tested only within the error-control strategy after primary success.",
+      "query": "secondary endpoints tested after primary endpoint success",
+      "documents": [
+        "FDA_MultipleEndpoints"
+      ]
+    },
+    {
+      "id": "M5",
+      "title": "Co-primary endpoints",
+      "requirement": "If co-primary endpoints are used, success requires all of them and the power calculation reflects this.",
+      "query": "co-primary endpoints success on all power",
+      "documents": [
+        "FDA_MultipleEndpoints"
+      ]
+    },
+    {
+      "id": "M6",
+      "title": "Composite endpoints",
+      "requirement": "Composite endpoint components, their clinical relevance and planned component analyses are described.",
+      "query": "composite endpoints components evaluation",
+      "documents": [
+        "FDA_MultipleEndpoints"
+      ]
+    },
+    {
+      "id": "M7",
+      "title": "Arms, doses and timepoints",
+      "requirement": "Multiplicity from multiple arms, doses or timepoints is addressed.",
+      "query": "multiple doses multiple timepoints multiplicity",
+      "documents": [
+        "FDA_MultipleEndpoints"
+      ]
+    },
+    {
+      "id": "M8",
+      "title": "Sample size reflects multiplicity",
+      "requirement": "Sample size/power accounts for the multiplicity adjustment.",
+      "query": "power sample size multiplicity adjustment",
+      "documents": [
+        "FDA_MultipleEndpoints"
+      ]
+    }
+  ]
+}

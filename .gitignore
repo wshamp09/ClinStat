@@ -1,0 +1,27 @@
+# --- secrets: never commit ---
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+
+# --- environments / caches ---
+venv/
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.cache/
+index/.tmp/
+
+# --- old vector store (replaced by index/) ---
+chroma_db/
+
+# --- OS / editor ---
+.DS_Store
+__MACOSX/
+.idea/
+.vscode/
+
+# --- source PDFs live in the Knowledge Bank folder, not the repo ---
+*.pdf

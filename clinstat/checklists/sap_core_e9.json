@@ -1,0 +1,116 @@
+{
+  "id": "sap_core_e9",
+  "title": "Core statistical content (ICH E9)",
+  "doc_type": "SAP",
+  "source_note": "ICH E9 Statistical Principles for Clinical Trials (1998)",
+  "items": [
+    {
+      "id": "C1",
+      "title": "Endpoints defined",
+      "requirement": "Primary and secondary variables are defined precisely (measurement, timepoint, derivation).",
+      "query": "primary variable secondary variables definition",
+      "documents": [
+        "ich_e9_stat"
+      ]
+    },
+    {
+      "id": "C2",
+      "title": "Design, randomisation and blinding",
+      "requirement": "Design type, control, randomisation method (stratification, blocking handled confidentially) and blinding are described.",
+      "query": "randomisation blinding block size stratification",
+      "documents": [
+        "ich_e9_stat"
+      ]
+    },
+    {
+      "id": "C3",
+      "title": "Crossover specifics (if applicable)",
+      "requirement": "For crossover designs: washout adequacy, carryover considerations and period effects in the model are addressed.",
+      "query": "crossover design carryover washout period effects",
+      "documents": [
+        "ich_e9_stat"
+      ]
+    },
+    {
+      "id": "C4",
+      "title": "Hypotheses and type I error",
+      "requirement": "Hypotheses (superiority / non-inferiority / equivalence), sidedness and significance level are stated; any NI or equivalence margin is justified.",
+      "query": "superiority equivalence non-inferiority margin one-sided two-sided significance level",
+      "documents": [
+        "ich_e9_stat"
+      ]
+    },
+    {
+      "id": "C5",
+      "title": "Analysis sets",
+      "requirement": "Full analysis set, per-protocol set and safety set are defined, with the role of each in the analyses.",
+      "query": "full analysis set per protocol set intention to treat",
+      "documents": [
+        "ich_e9_stat"
+      ]
+    },
+    {
+      "id": "C6",
+      "title": "Primary analysis model",
+      "requirement": "The primary model is fully specified, including pre-specified covariates and handling of centres/sites.",
+      "query": "covariates adjustment pre-specified primary analysis model centres",
+      "documents": [
+        "ich_e9_stat"
+      ]
+    },
+    {
+      "id": "C7",
+      "title": "Sample size justification",
+      "requirement": "Sample size assumptions (effect, variability, alpha, power, dropout) are stated with their sources.",
+      "query": "sample size calculation assumptions variability power",
+      "documents": [
+        "ich_e9_stat"
+      ]
+    },
+    {
+      "id": "C8",
+      "title": "Multiplicity",
+      "requirement": "The approach to multiple endpoints, comparisons, timepoints and interim looks is described.",
+      "query": "multiplicity adjustment multiple primary variables comparisons",
+      "documents": [
+        "ich_e9_stat"
+      ]
+    },
+    {
+      "id": "C9",
+      "title": "Interim analyses and monitoring",
+      "requirement": "Interim analyses, stopping rules, alpha spending and data monitoring arrangements are specified (or stated as none).",
+      "query": "interim analysis stopping guidelines data monitoring committee",
+      "documents": [
+        "ich_e9_stat"
+      ]
+    },
+    {
+      "id": "C10",
+      "title": "Missing values and deviations",
+      "requirement": "Handling of missing values, outliers and protocol deviations is pre-specified.",
+      "query": "missing values outliers protocol violations",
+      "documents": [
+        "ich_e9_stat"
+      ]
+    },
+    {
+      "id": "C11",
+      "title": "Subgroups and interactions",
+      "requirement": "Subgroup analyses are pre-specified and interpreted via interaction / consistency, not as confirmatory unless planned.",
+      "query": "subgroups interactions covariates consistency",
+      "documents": [
+        "ich_e9_stat"
+      ]
+    },
+    {
+      "id": "C12",
+      "title": "Safety analyses",
+      "requirement": "Safety and tolerability analyses (adverse events, lab data) are described.",
+      "query": "safety tolerability adverse events evaluation",
+      "documents": [
+        "ich_e9_stat"
+      ]
+    }
+  ]
+}

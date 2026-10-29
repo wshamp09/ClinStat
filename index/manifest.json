@@ -1,0 +1,326 @@
+{
+  "schema_version": 2,
+  "embed_model": "BAAI/bge-small-en-v1.5",
+  "documents": {
+    "RegulatoryDocs/FDA_AdaptiveDrug_2019.pdf": {
+      "source": "FDA_AdaptiveDrug_2019.pdf",
+      "category": "RegulatoryDocs",
+      "title": "Adaptive Designs for Clinical Trials of Drugs and Biologics",
+      "year": 2019,
+      "pages": 37,
+      "chunks": 122,
+      "skipped_pages": {
+        "toc": 2
+      },
+      "sha256": "c8b48547036f69ad95b4aac55510bd0c37ead058dd35dbc7cd0c15085e371a89",
+      "indexed_at": "2026-10-29T16:37:18+00:00"
+    },
+    "RegulatoryDocs/FDA_Adaptive_2016.pdf": {
+      "source": "FDA_Adaptive_2016.pdf",
+      "category": "RegulatoryDocs",
+      "title": "Adaptive Designs for Medical Device Clinical Studies - Guidance for Industry and Food and Drug Administration Staff",
+      "year": 2016,
+      "pages": 49,
+      "chunks": 103,
+      "skipped_pages": {
+        "toc": 2,
+        "references": 2
+      },
+      "sha256": "f3a84a64d9ece6786f44fb93c56c05a28a0cd4b4e40ed5fcd797c561f4704b95",
+      "indexed_at": "2026-10-29T16:37:23+00:00"
+    },
+    "RegulatoryDocs/FDA_CDRH_UseOfRWE_2025.pdf": {
+      "source": "FDA_CDRH_UseOfRWE_2025.pdf",
+      "category": "RegulatoryDocs",
+      "title": "Use of Real-World Evidence to Support Regulatory Decision-Making for Medical Devices",
+      "year": 2025,
+      "pages": 44,
+      "chunks": 126,
+      "skipped_pages": {
+        "toc": 1
+      },
+      "sha256": "0b9a5005ef0b40671d704d21e2e9c7f3315d3c5bf93f02deea15c7d29215253c",
+      "indexed_at": "2026-10-29T16:37:28+00:00"
+    },
+    "RegulatoryDocs/FDA_ExternalControl_2023.pdf": {
+      "source": "FDA_ExternalControl_2023.pdf",
+      "category": "RegulatoryDocs",
+      "title": "Considerations for the Design and Conduct of Externally Controlled Trials for Drug and Biological Products",
+      "year": 2023,
+      "pages": 20,
+      "chunks": 65,
+      "skipped_pages": {
+        "toc": 1
+      },
+      "sha256": "25187984f6b02afea0e10fc80a1e3660747205c0720dba689ba085a64557ddf3",
+      "indexed_at": "2026-10-29T16:37:30+00:00"
+    },
+    "RegulatoryDocs/FDA_MultipleEndpoints_2022.pdf": {
+      "source": "FDA_MultipleEndpoints_2022.pdf",
+      "category": "RegulatoryDocs",
+      "title": "Multiple Endpoints in Clinical Trials - Guidance for Industry",
+      "year": 2022,
+      "pages": 29,
+      "chunks": 82,
+      "skipped_pages": {
+        "toc": 1,
+        "references": 2
+      },
+      "sha256": "40284a050aab0037799072b2340e37d4b02ab6f7f2339fff6ea1cd55673a9563",
+      "indexed_at": "2026-10-29T16:37:34+00:00"
+    },
+    "RegulatoryDocs/FDA_PFDD_ClinicalOutcome_2025.pdf": {
+      "source": "FDA_PFDD_ClinicalOutcome_2025.pdf",
+      "category": "RegulatoryDocs",
+      "title": "Patient-Focused Drug Development: Selecting, Developing, or Modifying Fit-for-Purpose Clinical Outcome Assessments",
+      "year": 2025,
+      "pages": 53,
+      "chunks": 141,
+      "skipped_pages": {
+        "toc": 2,
+        "references": 6
+      },
+      "sha256": "8fcfb8387461ee21273d6ba81db3ee810737553c79fe5e51c00467b6948313d8",
+      "indexed_at": "2026-10-29T16:37:39+00:00"
+    },
+    "RegulatoryDocs/FDA_PROclaims_2009.pdf": {
+      "source": "FDA_PROclaims_2009.pdf",
+      "category": "RegulatoryDocs",
+      "title": "Guidance for Industry",
+      "year": 2009,
+      "pages": 43,
+      "chunks": 132,
+      "skipped_pages": {
+        "toc": 2
+      },
+      "sha256": "02ab925289dbb763496bbd7af439e69a55c03b5621968f5f1ec453d60f058663",
+      "indexed_at": "2026-10-29T16:37:41+00:00"
+    },
+    "RegulatoryDocs/FDA_masterprotocols_2022.pdf": {
+      "source": "FDA_masterprotocols_2022.pdf",
+      "category": "RegulatoryDocs",
+      "title": "Master Protocols: Efficient Clinical Trial Design Strategies to Expedite Development of Oncology Drugs and Biologics",
+      "year": 2022,
+      "pages": 28,
+      "chunks": 61,
+      "skipped_pages": {
+        "toc": 1,
+        "references": 1
+      },
+      "sha256": "8ca4c05cace3d271e4e421a9cbb8b9bf73ab6737b9f306567300f8a7a4b70fc9",
+      "indexed_at": "2026-10-29T16:37:43+00:00"
+    },
+    "RegulatoryDocs/e20_adaptive_designs_for_clinical_trials.pdf": {
+      "source": "e20_adaptive_designs_for_clinical_trials.pdf",
+      "category": "RegulatoryDocs",
+      "title": "e20 adaptive designs for clinical trials",
+      "year": null,
+      "pages": 36,
+      "chunks": 103,
+      "skipped_pages": {
+        "toc": 1
+      },
+      "sha256": "a2fcf33774bddef9e16f0797926e20aba9f77a26501ac6e3aad32b56c794a45c",
+      "indexed_at": "2026-10-29T16:37:47+00:00"
+    },
+    "RegulatoryDocs/ich_e9_r1_estimands_sensitivity.pdf": {
+      "source": "ich_e9_r1_estimands_sensitivity.pdf",
+      "category": "RegulatoryDocs",
+      "title": "E9 (R1) Step 5 addendum on estimands and Sensitivity Analysis in Clinical Trials to the guideline on statistical principles for clinical trials",
+      "year": null,
+      "pages": 19,
+      "chunks": 71,
+      "skipped_pages": {
+        "toc": 1
+      },
+      "sha256": "9e010896aaa464d4b64042cd4cad8be0dcd88d0a78a4857f31846f0e186c87c1",
+      "indexed_at": "2026-10-29T16:37:49+00:00"
+    },
+    "RegulatoryDocs/ich_e9_stat_principles_trials.pdf": {
+      "source": "ich_e9_stat_principles_trials.pdf",
+      "category": "RegulatoryDocs",
+      "title": "E 9 Statistical Principles for Clinical Trials",
+      "year": null,
+      "pages": 37,
+      "chunks": 144,
+      "skipped_pages": {
+        "toc": 2
+      },
+      "sha256": "6dd74185bb88a6f48a4b3a154893f9d8953b2fa4784c56fedda102e45f410b96",
+      "indexed_at": "2026-10-29T16:37:51+00:00"
+    },
+    "StatBooks/AppMetaAnalysisR_ChenPeace_2013.pdf": {
+      "source": "AppMetaAnalysisR_ChenPeace_2013.pdf",
+      "category": "StatBooks",
+      "title": "Applied Meta-Analysis with R",
+      "year": 2013,
+      "pages": 336,
+      "chunks": 485,
+      "skipped_pages": {
+        "toc": 10,
+        "blank": 5,
+        "references": 9
+      },
+      "sha256": "ee902142bdd06affa6ba2faa5772b36341c55de9456fcd13569c8cde3330e736",
+      "indexed_at": "2026-10-29T16:38:07+00:00"
+    },
+    "StatBooks/DesignAnalysisCrossOverTrials_JonesKenward_2015.pdf": {
+      "source": "DesignAnalysisCrossOverTrials_JonesKenward_2015.pdf",
+      "category": "StatBooks",
+      "title": "Design and Analysis of Cross-Over Trials, Third Edition",
+      "year": 2015,
+      "pages": 431,
+      "chunks": 867,
+      "skipped_pages": {
+        "blank": 13,
+        "references": 19
+      },
+      "sha256": "d7c18bf48dff56722ab168c5cd9c7a635c21d957782e4898508e6c0c7f4fd747",
+      "indexed_at": "2026-10-29T16:38:45+00:00"
+    },
+    "StatBooks/ElementsStatLearning_Tibshirani_etal.pdf": {
+      "source": "ElementsStatLearning_Tibshirani_etal.pdf",
+      "category": "StatBooks",
+      "title": "ElementsStatLearning Tibshirani etal",
+      "year": null,
+      "pages": 764,
+      "chunks": 1892,
+      "skipped_pages": {
+        "blank": 8,
+        "toc": 10,
+        "references": 29,
+        "index": 9
+      },
+      "sha256": "8c15b8b603edf93910ac5784175eee7b1e7b2e94549907a7d699482c59a9949a",
+      "indexed_at": "2026-10-29T16:42:59+00:00"
+    },
+    "StatBooks/NMAdecisionmaking_Dias_etal_2018.pdf": {
+      "source": "NMAdecisionmaking_Dias_etal_2018.pdf",
+      "category": "StatBooks",
+      "title": "NMAdecisionmaking Dias etal 2018",
+      "year": 2018,
+      "pages": 473,
+      "chunks": 1225,
+      "skipped_pages": {
+        "blank": 1,
+        "references": 35
+      },
+      "sha256": "ebdf99c6a1d68cca46c6f55d3d161abbb180401be2665185e4280e6eec7a5e9e",
+      "indexed_at": "2026-10-29T16:43:23+00:00"
+    },
+    "StatBooks/PlatformTrialDesigns_Antonijevic_2019.pdf": {
+      "source": "PlatformTrialDesigns_Antonijevic_2019.pdf",
+      "category": "StatBooks",
+      "title": "Platform Trial Designs in Drug Development",
+      "year": 2019,
+      "pages": 323,
+      "chunks": 709,
+      "skipped_pages": {
+        "blank": 21,
+        "toc": 3,
+        "references": 19,
+        "index": 9
+      },
+      "sha256": "2ac1f788bf88e527e7a16c8c0ee2e6396af74966e31b8a0311f5782ba5b12a6f",
+      "indexed_at": "2026-10-29T16:43:39+00:00"
+    },
+    "StatBooks/fundamentals_clinical trials_Friedman.pdf": {
+      "source": "fundamentals_clinical trials_Friedman.pdf",
+      "category": "StatBooks",
+      "title": "fundamentals clinical trials Friedman",
+      "year": null,
+      "pages": 456,
+      "chunks": 1260,
+      "skipped_pages": {
+        "blank": 4,
+        "references": 36,
+        "index": 5
+      },
+      "sha256": "6df1a76128979b6b3b76e67ce24ef74016a055d937d25ac7a5a4b58d75639e5a",
+      "indexed_at": "2026-10-29T16:44:00+00:00"
+    },
+    "StatBooks/intro_applied_multivariate_R_Everitt.pdf": {
+      "source": "intro_applied_multivariate_R_Everitt.pdf",
+      "category": "StatBooks",
+      "title": "intro applied multivariate R Everitt",
+      "year": null,
+      "pages": 284,
+      "chunks": 548,
+      "skipped_pages": {
+        "blank": 4,
+        "toc": 4,
+        "references": 11,
+        "index": 3
+      },
+      "sha256": "7a4f1a3dfe31dc0e2363a2699f69fd485ac6491e6644f693d3ff717bcd8536cb",
+      "indexed_at": "2026-10-29T16:44:37+00:00"
+    },
+    "StatPapers/AugmentingArms_PS_Lietal2022.pdf": {
+      "source": "AugmentingArms_PS_Lietal2022.pdf",
+      "category": "StatPapers",
+      "title": "Augmenting Both Arms of a Randomized Controlled Trial Using External Data: An Application of the Propensity Score-Integrated Approaches",
+      "year": 2022,
+      "pages": 11,
+      "chunks": 36,
+      "skipped_pages": {},
+      "sha256": "4a5766ce3f08b6669804fc34ca5d911a3845c37db821e07c3a97b8028cbe4d57",
+      "indexed_at": "2026-10-29T16:44:37+00:00"
+    },
+    "StatPapers/HomogeneityJBS_2019.pdf": {
+      "source": "HomogeneityJBS_2019.pdf",
+      "category": "StatPapers",
+      "title": "HomogeneityJBS 2019",
+      "year": 2019,
+      "pages": 11,
+      "chunks": 42,
+      "skipped_pages": {
+        "references": 2
+      },
+      "sha256": "cb9f0b6ca9e137ad20e751a26233db1e5316d4dddb9e376363bdaa8b580ba901",
+      "indexed_at": "2026-10-29T16:44:38+00:00"
+    },
+    "StatPapers/NMA_popadj_2020.pdf": {
+      "source": "NMA_popadj_2020.pdf",
+      "category": "StatPapers",
+      "title": "Multilevel network meta&#x2010;regression for population&#x2010;adjusted treatment comparisons",
+      "year": 2020,
+      "pages": 22,
+      "chunks": 82,
+      "skipped_pages": {},
+      "sha256": "940e3418bd4a4d1954b079b67190242ff287b1c3aea5624ae9e98533641dc2cf",
+      "indexed_at": "2026-10-29T16:44:40+00:00"
+    }
+  },
+  "skipped": {},
+  "last_run": {
+    "added": [
+      "RegulatoryDocs/FDA_AdaptiveDrug_2019.pdf",
+      "RegulatoryDocs/FDA_Adaptive_2016.pdf",
+      "RegulatoryDocs/FDA_CDRH_UseOfRWE_2025.pdf",
+      "RegulatoryDocs/FDA_ExternalControl_2023.pdf",
+      "RegulatoryDocs/FDA_MultipleEndpoints_2022.pdf",
+      "RegulatoryDocs/FDA_PFDD_ClinicalOutcome_2025.pdf",
+      "RegulatoryDocs/FDA_PROclaims_2009.pdf",
+      "RegulatoryDocs/FDA_masterprotocols_2022.pdf",
+      "RegulatoryDocs/e20_adaptive_designs_for_clinical_trials.pdf",
+      "RegulatoryDocs/ich_e9_r1_estimands_sensitivity.pdf",
+      "RegulatoryDocs/ich_e9_stat_principles_trials.pdf",
+      "StatBooks/AppMetaAnalysisR_ChenPeace_2013.pdf",
+      "StatBooks/DesignAnalysisCrossOverTrials_JonesKenward_2015.pdf",
+      "StatBooks/ElementsStatLearning_Tibshirani_etal.pdf",
+      "StatBooks/NMAdecisionmaking_Dias_etal_2018.pdf",
+      "StatBooks/PlatformTrialDesigns_Antonijevic_2019.pdf",
+      "StatBooks/fundamentals_clinical trials_Friedman.pdf",
+      "StatBooks/intro_applied_multivariate_R_Everitt.pdf",
+      "StatPapers/AugmentingArms_PS_Lietal2022.pdf",
+      "StatPapers/HomogeneityJBS_2019.pdf",
+      "StatPapers/NMA_popadj_2020.pdf"
+    ],
+    "updated": [],
+    "removed": [],
+    "unchanged": 0,
+    "skipped": [],
+    "seconds": 3415.8,
+    "finished_at": "2026-10-29T17:34:10+00:00"
+  }
+}

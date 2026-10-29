@@ -1,0 +1,98 @@
+{
+  "id": "estimands_e9r1",
+  "title": "Estimands & sensitivity analysis (ICH E9(R1))",
+  "doc_type": "protocol/SAP",
+  "source_note": "ICH E9(R1) addendum (final, 2019/2020)",
+  "items": [
+    {
+      "id": "E1",
+      "title": "Primary estimand fully defined",
+      "requirement": "The primary estimand states all five attributes: treatment condition(s) compared, population, variable (endpoint), handling of intercurrent events, and population-level summary measure.",
+      "query": "estimand attributes treatment population variable intercurrent events population-level summary",
+      "documents": [
+        "ich_e9_r1"
+      ]
+    },
+    {
+      "id": "E2",
+      "title": "Intercurrent events identified",
+      "requirement": "Anticipated intercurrent events are listed (e.g. treatment discontinuation, rescue or additional medication, treatment switching, death, lens dispensing changes).",
+      "query": "intercurrent events examples discontinuation of treatment rescue medication",
+      "documents": [
+        "ich_e9_r1"
+      ]
+    },
+    {
+      "id": "E3",
+      "title": "Strategy per intercurrent event",
+      "requirement": "A strategy is specified and justified for each intercurrent event (treatment policy, hypothetical, composite variable, while on treatment, principal stratum).",
+      "query": "strategies for addressing intercurrent events treatment policy hypothetical composite while on treatment principal stratum",
+      "documents": [
+        "ich_e9_r1"
+      ]
+    },
+    {
+      "id": "E4",
+      "title": "Main estimator aligned and pre-specified",
+      "requirement": "The main estimator (model, covariates, handling of data) is aligned with the estimand and specified unambiguously.",
+      "query": "main estimator aligned with estimand pre-specified unambiguously",
+      "documents": [
+        "ich_e9_r1"
+      ]
+    },
+    {
+      "id": "E5",
+      "title": "Missing data distinguished from intercurrent events",
+      "requirement": "Missing data are defined relative to the estimand, assumptions are stated (e.g. MAR) and the handling method is consistent with the estimand.",
+      "query": "missing data assumptions handling estimator intercurrent events distinction",
+      "documents": [
+        "ich_e9_r1"
+      ]
+    },
+    {
+      "id": "E6",
+      "title": "Sensitivity analysis",
+      "requirement": "Sensitivity analyses target the same estimand and vary the main estimator's assumptions in a structured way (e.g. MNAR / tipping point).",
+      "query": "sensitivity analysis same estimand assumptions robustness structured approach",
+      "documents": [
+        "ich_e9_r1"
+      ]
+    },
+    {
+      "id": "E7",
+      "title": "Supplementary analyses",
+      "requirement": "Supplementary analyses (targeting different estimands or estimators) are identified and distinguished from sensitivity analyses.",
+      "query": "supplementary analysis distinguished from sensitivity analysis",
+      "documents": [
+        "ich_e9_r1"
+      ]
+    },
+    {
+      "id": "E8",
+      "title": "Secondary estimands",
+      "requirement": "Estimands are also defined for key secondary objectives likely to support regulatory decisions.",
+      "query": "estimands for secondary trial objectives documenting estimands protocol",
+      "documents": [
+        "ich_e9_r1"
+      ]
+    },
+    {
+      "id": "E9",
+      "title": "Design and conduct support the estimand",
+      "requirement": "Data collection plans support the estimand (e.g. continued follow-up after discontinuation under treatment policy).",
+      "query": "trial design conduct data collection after discontinuation estimand",
+      "documents": [
+        "ich_e9_r1"
+      ]
+    },
+    {
+      "id": "E10",
+      "title": "Sample size reflects the estimand",
+      "requirement": "Sample size assumptions reflect the estimand (e.g. expected intercurrent event rates and their effect on the treatment effect or variability).",
+      "query": "sample size estimand intercurrent events planning",
+      "documents": [
+        "ich_e9_r1"
+      ]
+    }
+  ]
+}

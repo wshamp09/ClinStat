@@ -1,0 +1,163 @@
+{
+  "description": "Retrieval evaluation set. expected_doc = file name of the document that should answer the question (doc-level hit). expected_pages (optional) = pages holding the answer (page-level hit, +/-1 page). Edit or extend freely; add questions for every new document you index.",
+  "questions": [
+    {
+      "id": "q01",
+      "question": "What are the attributes that define an estimand?",
+      "expected_doc": "ich_e9_r1_estimands_sensitivity.pdf",
+      "expected_pages": [
+        10,
+        11
+      ]
+    },
+    {
+      "id": "q02",
+      "question": "What is the hypothetical strategy for handling intercurrent events?",
+      "expected_doc": "ich_e9_r1_estimands_sensitivity.pdf"
+    },
+    {
+      "id": "q03",
+      "question": "How does a sensitivity analysis differ from a supplementary analysis?",
+      "expected_doc": "ich_e9_r1_estimands_sensitivity.pdf"
+    },
+    {
+      "id": "q04",
+      "question": "How is the full analysis set related to the intention-to-treat principle?",
+      "expected_doc": "ich_e9_stat_principles_trials.pdf"
+    },
+    {
+      "id": "q05",
+      "question": "What does ICH E9 say about carryover and washout in crossover trials?",
+      "expected_doc": "ich_e9_stat_principles_trials.pdf"
+    },
+    {
+      "id": "q06",
+      "question": "Under what conditions does the Hochberg procedure control the familywise error rate?",
+      "expected_doc": "FDA_MultipleEndpoints_2022.pdf",
+      "expected_pages": [
+        22,
+        23
+      ]
+    },
+    {
+      "id": "q07",
+      "question": "How should co-primary endpoints be handled with respect to type I error?",
+      "expected_doc": "FDA_MultipleEndpoints_2022.pdf"
+    },
+    {
+      "id": "q08",
+      "question": "What is the fallback method for testing multiple endpoints?",
+      "expected_doc": "FDA_MultipleEndpoints_2022.pdf"
+    },
+    {
+      "id": "q09",
+      "question": "How should the index date or time zero be chosen in an externally controlled trial?",
+      "expected_doc": "FDA_ExternalControl_2023.pdf"
+    },
+    {
+      "id": "q10",
+      "question": "What makes an external data source fit for use as a control arm?",
+      "expected_doc": "FDA_ExternalControl_2023.pdf"
+    },
+    {
+      "id": "q11",
+      "question": "How does FDA define an adaptive design?",
+      "expected_doc": "FDA_Adaptive_2016.pdf"
+    },
+    {
+      "id": "q12",
+      "question": "Can sample size be re-estimated using blinded interim data?",
+      "expected_doc": "FDA_Adaptive_2016.pdf"
+    },
+    {
+      "id": "q13",
+      "question": "What recall period is appropriate for a patient-reported outcome instrument?",
+      "expected_doc": "FDA_PROclaims_2009.pdf"
+    },
+    {
+      "id": "q14",
+      "question": "How should a responder definition be established for a PRO endpoint?",
+      "expected_doc": "FDA_PROclaims_2009.pdf"
+    },
+    {
+      "id": "q15",
+      "question": "What is the difference between umbrella and basket trials?",
+      "expected_doc": "FDA_masterprotocols_2022.pdf"
+    },
+    {
+      "id": "q16",
+      "question": "What is the Grizzle two-stage procedure for carryover and why is it criticised?",
+      "expected_doc": "DesignAnalysisCrossOverTrials_JonesKenward_2015.pdf",
+      "expected_pages": [
+        66,
+        67
+      ]
+    },
+    {
+      "id": "q17",
+      "question": "What are Williams designs balanced for first-order carryover?",
+      "expected_doc": "DesignAnalysisCrossOverTrials_JonesKenward_2015.pdf"
+    },
+    {
+      "id": "q18",
+      "question": "What is the purpose of a run-in period before randomization?",
+      "expected_doc": "fundamentals_clinical trials_Friedman.pdf"
+    },
+    {
+      "id": "q19",
+      "question": "How is inconsistency assessed in a network meta-analysis using node-splitting?",
+      "expected_doc": "NMAdecisionmaking_Dias_etal_2018.pdf",
+      "expected_pages": [
+        412
+      ]
+    },
+    {
+      "id": "q20",
+      "question": "How does the DerSimonian-Laird method estimate between-study variance?",
+      "expected_doc": "AppMetaAnalysisR_ChenPeace_2013.pdf"
+    },
+    {
+      "id": "q21",
+      "question": "What is multilevel network meta-regression?",
+      "expected_doc": "NMA_popadj_2020.pdf"
+    },
+    {
+      "id": "q22",
+      "question": "How does the propensity score-integrated power prior borrow external data?",
+      "expected_doc": "AugmentingArms_PS_Lietal2022.pdf"
+    },
+    {
+      "id": "q23",
+      "question": "Why is homogeneity of treatment effect across subgroups assessed?",
+      "expected_doc": "HomogeneityJBS_2019.pdf"
+    },
+    {
+      "id": "q24",
+      "question": "How can non-concurrent controls be used in a platform trial?",
+      "expected_doc": "PlatformTrialDesigns_Antonijevic_2019.pdf",
+      "expected_pages": [
+        118
+      ]
+    },
+    {
+      "id": "q25",
+      "question": "How do the lasso and ridge regression differ in shrinkage?",
+      "expected_doc": "ElementsStatLearning_Tibshirani_etal.pdf"
+    },
+    {
+      "id": "q26",
+      "question": "How are principal component scores calculated?",
+      "expected_doc": "intro_applied_multivariate_R_Everitt.pdf"
+    },
+    {
+      "id": "q27",
+      "question": "Should the period effect be included in the analysis of a 2x2 crossover trial?",
+      "expected_doc": "DesignAnalysisCrossOverTrials_JonesKenward_2015.pdf"
+    },
+    {
+      "id": "q28",
+      "question": "What is a treatment policy strategy?",
+      "expected_doc": "ich_e9_r1_estimands_sensitivity.pdf"
+    }
+  ]
+}

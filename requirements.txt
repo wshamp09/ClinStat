@@ -1,0 +1,24 @@
+# ClinStat runtime dependencies (Python 3.11).
+#
+# Install with:   pip install --only-binary=:all: -r requirements.txt
+# --only-binary stops pip from compiling anything; it picks the newest release that
+# ships a ready-made wheel for your machine. The Intel-Mac (x86_64) ranges below are
+# capped at the release lines that still publish Intel-Mac wheels for Python 3.11.
+
+streamlit==1.63.0
+fastembed==0.8.0
+groq==1.7.0
+pypdf==6.18.1
+python-dotenv>=1.0
+pandas>=2.2
+python-docx>=1.1
+numpy>=1.26,<2.5
+
+# Intel Mac (x86_64)
+onnxruntime==1.19.2 ; sys_platform == "darwin" and platform_machine == "x86_64"
+scipy>=1.13,<1.16 ; sys_platform == "darwin" and platform_machine == "x86_64"
+pypdfium2>=4.25,<5 ; sys_platform == "darwin" and platform_machine == "x86_64"
+
+# Everywhere else (Apple Silicon, Linux / Streamlit Cloud)
+scipy>=1.13 ; sys_platform != "darwin" or platform_machine != "x86_64"
+pypdfium2>=4.30 ; sys_platform != "darwin" or platform_machine != "x86_64"

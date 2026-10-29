@@ -1,0 +1,80 @@
+{
+  "id": "adaptive_design",
+  "title": "Adaptive designs (FDA guidance)",
+  "doc_type": "protocol/SAP",
+  "source_note": "FDA Adaptive Designs guidance (2016 draft in the knowledge bank; final Nov 2019)",
+  "items": [
+    {
+      "id": "A1",
+      "title": "Prospective planning",
+      "requirement": "All adaptations, their timing and decision rules are prospectively specified.",
+      "query": "prospectively planned adaptations decision rules",
+      "documents": [
+        "FDA_Adaptive"
+      ]
+    },
+    {
+      "id": "A2",
+      "title": "Type I error control",
+      "requirement": "Control of the type I error rate is demonstrated analytically or by simulation.",
+      "query": "control of type I error rate adaptive design",
+      "documents": [
+        "FDA_Adaptive"
+      ]
+    },
+    {
+      "id": "A3",
+      "title": "Simulation report",
+      "requirement": "Simulations cover realistic scenarios and report power, type I error, sample size distribution and estimation bias.",
+      "query": "simulation operating characteristics scenarios report",
+      "documents": [
+        "FDA_Adaptive"
+      ]
+    },
+    {
+      "id": "A4",
+      "title": "Estimation",
+      "requirement": "Bias in treatment effect estimates and confidence interval coverage are addressed.",
+      "query": "bias estimation confidence interval adaptive",
+      "documents": [
+        "FDA_Adaptive"
+      ]
+    },
+    {
+      "id": "A5",
+      "title": "Trial integrity",
+      "requirement": "Access to interim results is restricted (firewall, DMC / adaptation committee, charter).",
+      "query": "maintaining trial integrity confidentiality interim results data monitoring committee",
+      "documents": [
+        "FDA_Adaptive"
+      ]
+    },
+    {
+      "id": "A6",
+      "title": "Interim timing and data quality",
+      "requirement": "Interim timing (information fraction) and data quality at the interim are addressed.",
+      "query": "interim analysis timing information data quality",
+      "documents": [
+        "FDA_Adaptive"
+      ]
+    },
+    {
+      "id": "A7",
+      "title": "Sample size re-estimation",
+      "requirement": "Any sample size re-estimation states blinded vs unblinded approach and its effect on error rates.",
+      "query": "sample size re-estimation blinded unblinded",
+      "documents": [
+        "FDA_Adaptive"
+      ]
+    },
+    {
+      "id": "A8",
+      "title": "Documentation",
+      "requirement": "Documentation for regulators (protocol, SAP, charter, simulation code/report) is described.",
+      "query": "documentation adaptive design submission charter",
+      "documents": [
+        "FDA_Adaptive"
+      ]
+    }
+  ]
+}
